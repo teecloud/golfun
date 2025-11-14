@@ -1,0 +1,7 @@
+{
+  "name": "golfun",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
