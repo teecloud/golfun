@@ -18,6 +18,12 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    app.MapSwaggerUi(options =>
+    {
+        options.SwaggerEndpoint("/openapi/v1.json", "golfun API v1");
+        options.RoutePrefix = string.Empty;
+        options.DocumentTitle = "golfun API documentation";
+    });
 }
 
 app.UseHttpsRedirection();
